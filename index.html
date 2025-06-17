@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAGO EXPRESS</title>
+    <link rel="shortcut icon" href="images/logon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TRAGO EXPRESS</h1>
+    </header>
+
+    <main>
+        <section id="carousel-section">
+            <h2>Nuestros Productos</h2>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="images/bacardi.jpg" alt="Bebida 1">
+                </div>
+             
+                <div class="carousel-slide">
+                    <img src="images/bebida8.jpg" alt="Bebida 3">
+                </div>
+          
+
+                <div class="carousel-slide">
+                    <img src="images/jack.jpg" alt="Bebida 6">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/jager.jpg" alt="Bebida 7">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/jonie.jpg" alt="Bebida 8">
+                </div>
+
+                <div class="carousel-slide">
+                    <img src="images/vodka.jpg" alt="Bebida 10">
+                </div>
+                </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+
+        <section id="products-section">
+            <h2>Haz tu Pedido</h2>
+            <div class="product-grid">
+                </div>
+        </section>
+
+        <section id="cart-section">
+            <h2>Tu Carrito de Compras</h2>
+            <div id="cart-items">
+                <p>Tu carrito está vacío.</p>
+            </div>
+            <div class="cart-total">
+                Total: $<span id="cart-total-amount">0.00</span>
+            </div>
+        </section>
+
+        <section id="order-form-section">
+            <h2>Detalles del Pedido</h2>
+            <form id="order-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+                <!-- Esto es un comentario en HTML 
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" required -->
+                <label for="payment-method">Método de Pago:</label>
+                <select id="payment-method" required>
+                    <option value="">Selecciona un método</option>
+                    <option value="cash">Efectivo</option>
+                    <option value="transfer">Transferencia / Mercado Pago</option>
+                    <option value="credit-card">Tarjeta de Crédito</option>
+                    <option value="debit-card">Tarjeta de Débito</option>
+                </select>
+
+                <button type="submit" id="send-order-button">Enviar Pedido por WhatsApp</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TRAGO EXPRESS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
